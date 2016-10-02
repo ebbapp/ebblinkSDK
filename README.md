@@ -17,8 +17,6 @@ Table of Contents
 Requirements
 --------------
 
-Link your project with the following frameworks:
-
 - iOS 8+
 
 
@@ -29,7 +27,7 @@ Add the following to your Podfile:
 
 ```sh
 
-pod 'ebblinkSDK', :git => 'https://github.com/ebbapp/ebblinkSDK', :tag => '0.0.1'
+pod 'ebblinkSDK', :git => 'https://github.com/ebbapp/ebblinkSDK'
 ```
 
 
