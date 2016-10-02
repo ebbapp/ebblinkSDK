@@ -1,0 +1,6 @@
+framework module ebblinkSDK {
+  umbrella header "ebblinkSDK.h"
+
+  export *
+  module * { export * }
+}
