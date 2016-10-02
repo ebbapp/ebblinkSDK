@@ -44,6 +44,8 @@ Quick Start
 ```Objective-C
 + (void)initWithToken:(NSString*)token andUserId:(NSString*)userId;
 ```
+To get a token write us at info@fiveopenbooks.com
+The userId is a parameter that identifies a unique user. You can use any string such the unique identifier, the user email, whatever.
 
 
 ##### Upload a new image
