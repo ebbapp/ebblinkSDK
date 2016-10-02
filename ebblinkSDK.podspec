@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'ebblinkSDK.framework'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'ebblinkSDK', 'AFNetworking'
-  s.dependency "AFNetworking", "~> 3.0"
+  # s.dependency "AFNetworking", "~> 3.0"
 end
