@@ -29,7 +29,7 @@ Add the following to your Podfile:
 
 ```sh
 
-pod 'ebblinkSDK', :git => 'https://github.com/pballart/ebblinkSDKTest', :tag => '0.0.1'
+pod 'ebblinkSDK', :git => 'https://github.com/ebbapp/ebblinkSDK', :tag => '0.0.1'
 ```
 
 
