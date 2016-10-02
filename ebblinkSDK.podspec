@@ -23,7 +23,8 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE.txt" }
   s.author             = { "Pau Ballart Godoy" => "pballart@gmail.com" }
-  s.source       = { :git => "https://github.com/pballart/ebblinkSDKTest.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ebbapp/ebblinkSDK.git" }
+  # s.source       = { :git => "https://github.com/ebbapp/ebblinkSDK.git", :tag => "#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -33,8 +34,6 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'ebblinkSDKLibrary' => ['ebblinkSDKLibrary/Assets/*.png']
   # }
-
-  s.requires_arc = true
 
   s.ios.vendored_frameworks = 'ebblinkSDK.framework'
   # s.public_header_files = 'Pod/Classes/**/*.h'
