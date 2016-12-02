@@ -43,7 +43,9 @@ The userId is a parameter that identifies a unique user. You can use any string 
 ```
 
 ##### Set processing mode
-By default the processing is done on the device. Optionally, you can select that the processing happens on the server.
+There are two possible processing modes:
+- ```Device```: the encryption and decryption of the image is performed on the user's device. This means that the image is uploaded to our servers fully encrypted.
+- ```Server```: the encryption and decryption of the image is performed on our server. This means that during the network data transfer from our servers to the device the image is not encrypted. The processing time may vary depending on the device specifications. By default the processing mode is ```Device```.
 ```Objective-C
 
 + (void)setProcessingMode:(EBProcessingMode)processingMode;
