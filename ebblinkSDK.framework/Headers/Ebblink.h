@@ -40,6 +40,15 @@ typedef enum EBProcessingMode : NSUInteger {
 + (void)setProcessingMode:(EBProcessingMode)processingMode;
 
 /*!
+ @brief Sets the debug mode.
+ 
+ @discussion This method enables the debug information in the console.
+ 
+ @param  debugMode A boolean indicating if the debug logs should be printed in the console.
+ */
++ (void)setDebugMode:(BOOL)debugMode;
+
+/*!
  @brief Encrypts an image and saves it in the server.
  
  @discussion This method accepts an image id and a matching password in order to decrypt it and present it to the user.

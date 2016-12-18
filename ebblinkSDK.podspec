@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ebblinkSDK'
-  s.version          = '1.0'
+  s.version          = '1.0.1'
   s.summary          = "ebblinkSDK let's your users share an image while preserving privacy"
   s.description  = "ebblinkSDK helps developers to implement a secure image sharing platform in their apps. "
   s.homepage     = "http://www.ebbl.ink"
