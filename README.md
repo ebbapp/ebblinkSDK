@@ -36,8 +36,10 @@ Quick Start
 
 
 ##### Instantiate Ebblink iOS SDK
-To get a token write us at info@fiveopenbooks.com
-The userId is a parameter that identifies a unique user. You can use any string such the unique identifier, the user email, whatever.
+To get a token send us email at info@fiveopenbooks.com
+
+The userId is a parameter that identifies a unique user. You can use any string such that the
+identifier is unique, for example the user email.
 ```Objective-C
 + (void)initWithToken:(NSString*)token andUserId:(NSString*)userId;
 ```
@@ -86,5 +88,4 @@ Terms and Conditions
 
 You can find our terms and conditions in the following url:
 
-    http://www.fiveopenbooks.com/terms
-
+[http://www.fiveopenbooks.com/terms](http://www.fiveopenbooks.com/terms)
