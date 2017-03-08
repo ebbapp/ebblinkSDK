@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "EBUserStory.h"
 
 /** The available processing modes for the Ebblink SDK. */
 typedef enum EBProcessingMode : NSUInteger {
@@ -51,7 +52,7 @@ typedef enum EBProcessingMode : NSUInteger {
 /*!
  @brief Encrypts an image and saves it in the server.
  
- @discussion This method accepts an image id and a matching password in order to decrypt it and present it to the user.
+ @discussion This method accepts an image and upload it to the server.
  
  @param  image The image.
  
@@ -95,5 +96,27 @@ typedef enum EBProcessingMode : NSUInteger {
  @param  completionBlock The completion block that will be executed when the processing is finished.
  */
 + (void) p3ImageKill:(NSString*)imageId completion:(void (^)(BOOL success, NSString* error))completionBlock;
+
+/*!
+ @brief Encrypts an image and saves it in the server as a story.
+ 
+ @discussion This method accepts an image and uploads to the server as an story. A story is linked to the user and available during 24h.
+ 
+ @param  image The image.
+ 
+ @param  completionBlock The completion block that will be executed when the processing is finished.
+ */
++ (void) p3ImageStoryUpload:(UIImage*)image completion:(void (^)(NSString* imageId, NSString* error))completionBlock;
+
+/*!
+ @brief Gets a user story.
+ 
+ @discussion This method accepts a user id and gets it's story from the server.
+ 
+ @param  userId The user id.
+ 
+ @param  completionBlock The completion block that will be executed when the processing is finished.
+ */
++ (void) p3UserStoryView:(NSString*)userId completion:(void (^)(EBUserStory *story, NSString* error))completionBlock;
 
 @end
