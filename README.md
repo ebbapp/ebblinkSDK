@@ -82,6 +82,24 @@ There are two possible processing modes:
 
 ```
 
+##### Upload an image as a story
+A story is an image that is linked to the user and available for only 24h from the moment it is uploaded. The completion block returns an imageId that is needed if one wants to manually delete the image before the 24h. 
+
+
+```Objective-C
++ (void) p3ImageStoryUpload:(UIImage*)image completion:(void (^)(NSString* imageId, NSString* error))completionBlock;
+
+```
+
+##### View the stories of a user
+Calling this method and passing a userId will return in the completion block an EBUserStory object that contains all the available stories from that user. 
+
+
+```Objective-C
++ (void) p3UserStoryView:(NSString*)userId completion:(void (^)(EBUserStory *story, NSString* error))completionBlock;;
+
+```
+
 
 Terms and Conditions
 ----------------
